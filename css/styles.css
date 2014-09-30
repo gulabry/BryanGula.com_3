@@ -1,12 +1,20 @@
 
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+
+/*NAVBAR*/
 
 nav {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	display: inline;
 	margin-top: 2px;
+
 }
+
+.smallPhone {
+	display: none;
+}
+
 
 .navbar {
 	border: none;
@@ -14,6 +22,8 @@ nav {
     opacity: .98;
     background: white;
     margin: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .name {
@@ -43,7 +53,8 @@ nav {
 }
 
 body {
-	background: url("../img/background.png") no-repeat;	
+	background: url("../img/background.png");
+	background-repeat: repeat-x;	
 	display: inline;
 }
 
@@ -65,14 +76,19 @@ p {
 /*LEFT PHONE*/
 
 .cardswapr {
-	width: 70%;
+	width: 80%;
 	margin: 30px;
 	margin-left: 15%;
 	height: 500px;
+	margin-top: 80px;
 }
 
 .cardswapr:hover {
 	background-color: green;
+}
+
+.cardswapr:hover p {
+	color: white;
 }
 
 #phone {
@@ -89,18 +105,25 @@ p {
 /*RIGHT PHONE*/
 
 .coursework {
-	width: 70%;
-	margin: 30px;
+	width: 80%;
+	margin: 20px;
 	height: 500px;
+	margin-top: 80px;
 }
 
 .coursework:hover {
-	background-color: orange;
+	background-color: green;
+
 }
 
-.coursework h2 {
+.coursework h1 {
 	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 	color: green;
+}
+
+.coursework:hover h1 {
+		color: white;
 }
 
 #course {
@@ -108,7 +131,14 @@ p {
 	margin-top: 5%;
 }
 
-
+#text {
+	width: 80%;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*FOOTER*/
 
@@ -119,17 +149,62 @@ footer {
 	color: white;
 }
 
-footer:hover {
-	text-decoration: none;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.links {
-		margin-top: 0;
+		font-size: 25px;
 	}
 
 	#nav1 {
 		padding-right: 20px;
+	}
+
+	.cardswapr {
+		width: 90%;
+		margin-left: 10px;
+	}
+
+	.coursework {
+		width: 90%;
+		margin-left: 10px;
+	}	
+
+}
+
+@media (max-width: 530px) {
+	.regularPhone {
+		display: none;
+	}
+
+	.cardswapr {	
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		height: 350px;
+	}
+
+	.smallPhone {
+		display: block;
+	}
+
+	.coursework {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 600;
+		color: green;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 20px;
+		margin-top: 30px;
+		height: 350px;
+	}
+
+	.coursework:hover h1 {
+		color: white;
+	}
+
+	footer {
+		margin-bottom: 20px;
 	}
 
 }
