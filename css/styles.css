@@ -11,15 +11,10 @@ nav {
 
 }
 
-.smallPhone {
-	display: none;
-}
-
-
 .navbar {
 	border: none;
     height: 50px;
-    opacity: .98;
+    opacity: .97;
     background: white;
     margin: 0;
     position: fixed;
@@ -43,6 +38,10 @@ nav {
 	padding-right: 50px;
 }
 
+nav span {
+	color: #396113;
+}
+
 #nav2 {
 	padding-right: 15px;
 }
@@ -64,6 +63,7 @@ button {
 	border-radius: 15px;
 	border: none;
 	vertical-align: center;
+	opacity: .92;
 }
 
 p {
@@ -73,18 +73,22 @@ p {
 	margin: 0 0 0 0;
 }
 
+.allContent button {
+	margin: 5%;
+	margin-top: 70px;
+}
+
 /*LEFT PHONE*/
 
 .cardswapr {
-	width: 80%;
-	margin: 30px;
-	margin-left: 15%;
-	height: 500px;
-	margin-top: 80px;
+	width: 90%;
+	/*height: 700px;*/
+	margin-top: 70px;
 }
 
 .cardswapr:hover {
 	background-color: green;
+	opacity: .92;
 }
 
 .cardswapr:hover p {
@@ -92,23 +96,35 @@ p {
 }
 
 #phone {
-	width: 90%;
+	width: 100%;
 	margin-top: 5%;
 }
 
 #banner {
-	width: 80%;
+	width: 70%;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+/*Middle phone*/
+
+.bio {
+	width: 90%;
+	height: 700px;
+	margin-top: 70px;
 }
 
 /*RIGHT PHONE*/
 
 .coursework {
-	width: 80%;
+	width: 900%;
 	margin: 20px;
-	height: 500px;
-	margin-top: 80px;
+	height: 700px;
+	margin-top: 60px;
+}
+
+#coursePhone {
+	height: 600px;
 }
 
 .coursework:hover {
@@ -129,15 +145,6 @@ p {
 #course {
 	width: 90%;
 	margin-top: 5%;
-}
-
-#text {
-	width: 80%;
-	text-align: center;
-	background-color: white;
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /*FOOTER*/
