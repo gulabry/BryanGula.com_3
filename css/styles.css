@@ -53,7 +53,7 @@ nav span {
 
 body {
 	background: url("../img/background.png");
-	background-repeat: repeat-x;	
+	background-repeat: repeat;
 	display: inline;
 }
 
@@ -212,6 +212,7 @@ footer {
 
 	footer {
 		margin-bottom: 20px;
+		margin: 10 auto 10 auto;
 	}
 
 }
