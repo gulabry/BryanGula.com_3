@@ -127,6 +127,11 @@ p {
 	height: 600px;
 }
 
+#phone {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .coursework:hover {
 	background-color: green;
 
@@ -156,6 +161,14 @@ footer {
 	color: white;
 }
 
+@media (max-width: 1250px) {
+	.cardswapr {
+		width: 100%;
+	}
+	#coursePhone {
+		width: 100%;
+	}
+
 @media (max-width: 768px) {
 	.links {
 		font-size: 25px;
@@ -166,11 +179,11 @@ footer {
 	}
 
 	.cardswapr {
-		width: 90%;
+		width: 100%;
 	}
 
 	.coursework {
-		width: 90%;
+		width: 100%;
 	}	
 
 }
